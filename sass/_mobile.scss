@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+  #section-a {
+    .main-navbar {
+      flex-direction: column;
+      align-items: center;
+      .list {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .about,
+  .packages,
+  .booking {
+    #section-a {
+      height: 16vh;
+    }
+  }
+
+  .packages {
+    #section-b {
+      .offers {
+        .offer-1,
+        .offer-9 {
+          img {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .booking {
+    #section-c {
+      margin: 8% 0 7% 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #section-a {
+    height: 55vh;
+    .btn {
+      padding: 0;
+      border-radius: 0;
+      &:before {
+        display: none;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+    .current {
+      background: none;
+      color: #fff;
+      border-bottom: 3px solid orange;
+    }
+    .main-navbar {
+      ul {
+        li {
+          margin: 0 20px;
+        }
+      }
+    }
+
+    .showcase {
+      padding-top: 3rem;
+      .lead,
+      a {
+        display: none;
+      }
+      h1 {
+        font-size: 37px;
+      }
+    }
+  }
+
+  #section-b .trips,
+  #section-c .stats,
+  #section-d .processes,
+  .about #section-b .about-us,
+  .about #section-b .img-and-people,
+  .booking #section-c .contact-info {
+    flex-direction: column;
+  }
+
+  #section-b {
+    .trips {
+      .trip {
+        border-right: none;
+        border-bottom: 2px solid orange;
+        &-3 {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  #section-c {
+    .stats {
+      flex-direction: column;
+
+      .stat {
+        border-right: none;
+      }
+    }
+  }
+
+  #main-footer {
+    flex-direction: column;
+  }
+
+  .about #section-a,
+  .packages #section-a,
+  .booking #section-a {
+    height: 22vh;
+  }
+
+  .about #section-c .testimonials,
+  .packages #section-b .offers {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    #section-b {
+      .who {
+        margin-top: 10px;
+        width: 94%;
+        h2 {
+          font-size: 40px;
+        }
+        padding: 10px;
+      }
+      .about {
+        padding: 30px;
+      }
+    }
+  }
+
+  .packages #section-b .offers .offer-1 {
+    img {
+      height: 300px;
+    }
+  }
+}

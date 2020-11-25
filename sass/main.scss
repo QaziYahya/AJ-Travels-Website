@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+  font-family: 'Dosis', Arial;
+  line-height: 1.5;
+  max-height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+//Basic Styling
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+//Padding top & bottom
+.py1 {
+  padding: 10px 0;
+}
+.py2 {
+  padding: 15px 0;
+}
+.py3 {
+  padding: 20px 0;
+}
+.py4 {
+  padding: 30px 0;
+}
+
+//Margin top & bottom
+.my1 {
+  margin: 10px 0;
+}
+.my2 {
+  margin: 15px 0;
+}
+.my3 {
+  margin: 20px 0;
+}
+
+//Text to the center
+.text-center {
+  text-align: center;
+}
+
+p,
+h1 {
+  margin: 10px 0;
+}
+
+.logo {
+  width: 250px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.bottom-line {
+  height: 2px;
+  background: orange;
+  width: 60px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.current {
+  background: #fff;
+  color: #333;
+}
+
+.btn {
+  padding: 15px 20px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.5s;
+  opacity: 0.9;
+  border-radius: 100px 100px 100px 100px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 100px;
+    transform: translateX(-135px);
+    transition: 0.5s;
+    z-index: -1;
+  }
+}
+.btn:hover:before {
+  transform: translateX(0);
+}
+.btn:hover {
+  color: #333;
+}
+
+//Section A Styling
+#section-a {
+  position: relative;
+  background: url('../images/showcase3.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0.45;
+  }
+
+  //Navbar Styling
+  .main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-left: 4px solid yellow;
+    border-right: 4px solid yellow;
+    ul {
+      display: flex;
+      li {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  //Showcase Styling
+  .showcase {
+    padding-top: 20rem;
+    text-align: center;
+    .lead {
+      font-size: 18px;
+    }
+    .btn {
+      background-color: #000000;
+      border-radius: 100px;
+      margin-top: 10px;
+      width: 40%;
+      transition: 0.75s;
+
+      &:before {
+        content: '';
+        transform: translateX(-712px);
+        transition: 0.75s;
+      }
+    }
+    .btn:hover:before {
+      transform: translateX(0);
+    }
+  }
+}
+
+//Section B Styling
+#section-b {
+  .trips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .trip {
+      padding: 30px;
+      border-right: 2px solid orange;
+      &-3 {
+        border-right: none;
+      }
+    }
+
+    .fas {
+      transition: 0.7s;
+    }
+
+    .fas:hover {
+      font-size: 100px;
+    }
+  }
+}
+
+//Section C Styling
+#section-c {
+  .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat {
+    padding: 30px 50px;
+    border-right: 2px solid orange;
+    &-3 {
+      border-right: none;
+    }
+  }
+  .fas {
+    position: relative;
+    font-size: 80px;
+    padding: 20px;
+  }
+
+  .number {
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+    right: 0;
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+}
+
+//Section D Styling
+#section-d {
+  .processes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .process {
+    padding: 30px 50px;
+  }
+
+  .fas {
+    color: #fff;
+    padding: 40px;
+    background: #333;
+    border-radius: 50%;
+    transition: 0.7s;
+  }
+
+  .fa-handshake {
+    padding: 40px 30px;
+  }
+
+  .fa-dollar-sign {
+    padding: 40px 55px;
+  }
+
+  .fas:hover {
+    background: orange;
+    font-size: 90px;
+  }
+}
+
+#main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  padding: 10px;
+  color: #fff;
+
+  .social {
+    .fab {
+      margin-right: 30px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      color: #333;
+      text-align: center;
+
+      &:hover {
+        background: orange;
+        color: #fff;
+      }
+    }
+    .fa-facebook,
+    .fa-instagram {
+      padding: 10px 12px;
+    }
+  }
+}
+
+//About Page Styling
+//Section A Navbar Styling
+.about {
+  #section-a {
+    background: url('../images/showcase3.jpg') no-repeat 20% 27% / cover;
+    height: 11.4vh;
+  }
+
+  //Section B About Us Styling
+  #section-b {
+    .about-us {
+      display: flex;
+      align-items: center;
+    }
+    .about-us div {
+      flex: 1;
+    }
+    .who {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    .about {
+      background: orange;
+      padding: 50px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .img-and-people {
+      display: flex;
+      & div {
+        flex: 1;
+      }
+      .img {
+        background: url('../images/people.jpg') no-repeat center center/cover;
+      }
+
+      .people {
+        background: #333;
+        color: #fff;
+        padding: 40px;
+        ul li {
+          padding: 5px;
+          border-bottom: 1px dashed #444;
+        }
+      }
+    }
+  }
+
+  #section-c {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+      img {
+        width: 70px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .img-txt {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+//Packages Page Styling
+//Section A Navbar
+.packages {
+  #section-a {
+    background: url('../images/showcase3.jpg') no-repeat 20% 27% / cover;
+    height: 11.4vh;
+  }
+
+  #section-b {
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.1);
+      .place {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+      .offer {
+        position: relative;
+        transition: 0.5s;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 40%;
+          background: orange;
+          z-index: 2;
+          top: 30%;
+          left: 0;
+          opacity: 0;
+          transition: 0.5s;
+          box-shadow: 0.5px 0.5px 15px rgba(0, 0, 0, 0.8);
+        }
+        .txt {
+          position: absolute;
+          top: 33%;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: #fff;
+          z-index: 3;
+          opacity: 0;
+          transition: 0.5s;
+        }
+        &:hover:after {
+          opacity: 1;
+        }
+        &:hover .txt {
+          opacity: 1;
+        }
+      }
+      .offer-4,
+      .offer-10 {
+        img {
+          height: 260px;
+        }
+      }
+    }
+  }
+}
+
+//Booking Page Styling
+//Section A Styling
+.booking {
+  #section-a {
+    background: url('../images/showcase3.jpg') no-repeat 20% 27% / cover;
+    height: 11.4vh;
+  }
+
+  #section-b {
+    form {
+      .contact {
+        display: grid;
+        grid-gap: 20px;
+        align-items: center;
+        grid-template-areas:
+          'name email'
+          'phone address'
+          'package package';
+        padding: 20px;
+        .input-text {
+          padding: 10px;
+          width: 90%;
+        }
+        .name {
+          grid-area: name;
+        }
+        .email {
+          grid-area: email;
+        }
+        .phone {
+          grid-area: phone;
+        }
+        .address {
+          grid-area: address;
+        }
+        .package {
+          grid-area: package;
+          width: 95%;
+        }
+      }
+    }
+    .btn {
+      border: none;
+      width: 80%;
+      background: #000000;
+      color: #fff;
+      &:before {
+        transform: translateX(-880px);
+        background: orange;
+        transition: 0.7s;
+      }
+      &:hover:before {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  #section-c {
+    background: #000000;
+    margin: 8% 0 1% 0;
+    .contact-info {
+      display: flex;
+      justify-content: space-evenly;
+      color: #fff;
+
+      .fas {
+        font-size: 60px;
+        transition: 1s;
+        padding: 40px;
+        border-radius: 50%;
+        &:hover {
+          color: #333;
+          background: #fff;
+        }
+      }
+
+      .info {
+        padding: 30px;
+      }
+    }
+  }
+}
+
+@import 'mobile';
