@@ -445,5 +445,22 @@ h1 {
 
   .packages #section-b .offers .offer-1 img {
     height: 300px; } }
+@media (max-height: 415px) {
+  #section-a {
+    height: 100vh; }
+    #section-a .showcase {
+      padding-top: 0; }
+      #section-a .showcase .lead {
+        display: none; }
+      #section-a .showcase .btn {
+        display: none; }
+
+  .about #section-a,
+  .packages #section-a,
+  .booking #section-a {
+    height: 55vh; }
+
+  .about #section-c .testimonials {
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=style.css.map */

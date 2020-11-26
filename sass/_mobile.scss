@@ -143,3 +143,30 @@
     }
   }
 }
+
+@media (max-height: 415px) {
+  #section-a {
+    height: 100vh;
+    .showcase {
+      padding-top: 0;
+      .lead {
+        display: none;
+      }
+      .btn {
+        display: none;
+      }
+    }
+  }
+
+  .about,
+  .packages,
+  .booking {
+    #section-a {
+      height: 55vh;
+    }
+  }
+
+  .about #section-c .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
